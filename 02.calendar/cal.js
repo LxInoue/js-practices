@@ -2,7 +2,6 @@
 
 import minimist from "minimist";
 import { DateTime } from "luxon";
-import chalk from "chalk";
 
 const today = DateTime.now();
 const args = minimist(process.argv.slice(2));
@@ -27,7 +26,6 @@ console.log("日 月 火 水 木 金 土");
 process.stdout.write("   ".repeat(firstDay.weekday % 7));
 
 for (let day = 1; day <= lastDay.day; day++) {
-  const currentDay = DateTime.local(year, month, day);
   let dayString = day.toString().padStart(2, " ");
 
   if ((firstDay.weekday + day - 1) % 7 === 6) {

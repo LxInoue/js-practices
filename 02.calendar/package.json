@@ -10,5 +10,17 @@
     "globals": "^15.13.0",
     "prettier": "^3.4.2"
   },
-  "type": "module"
+  "type": "module",
+  "name": "02.calendar",
+  "version": "1.0.0",
+  "main": "cal.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "chalk": "^5.4.1",
+    "luxon": "^3.6.0",
+    "minimist": "^1.2.8"
+  }
 }

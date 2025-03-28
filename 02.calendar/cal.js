@@ -30,10 +30,6 @@ for (let day = 1; day <= lastDay.day; day++) {
   const currentDay = DateTime.local(year, month, day);
   let dayString = day.toString().padStart(2, " ");
 
-  if (currentDay.hasSame(today, "day")) {
-    dayString = chalk.inverse(dayString);
-  }
-
   if ((firstDay.weekday + day - 1) % 7 === 6) {
     console.log(dayString);
   } else {
